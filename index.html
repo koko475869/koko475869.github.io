@@ -108,11 +108,12 @@
             margin-bottom: 10px;
             list-style-type: none;
             text-align: center;
+			font-size: 1.2em;
         }
 
         ul>li>span {
             margin-left: 5px;
-            font-size: 12px;
+            font-size: 1em;
         }
     </style>
  
@@ -175,19 +176,20 @@ _top: expression(documentElement.scrollTop + documentElement.clientHeight-this.o
 	logoElem.setAttribute('id', 'logo');
 	logoElem.innerHTML = '久爱<span class="flag">01</span>'
 	mainElem.appendChild(logoElem);
-	//
-	var foreverFieldElem = createFieldElem({
-		title: '请收藏永久地址發布頁面',
-		items: foreverUrls
-	});
-	mainElem.appendChild(foreverFieldElem);
+	
+	
 	var newestFieldElem = createFieldElem({
 		title: '以下为最新地址(定期更新，牢记上面发布页)',
 		items: newestUrls,
 		text: ''
 	});
 	mainElem.appendChild(newestFieldElem);
-	//
+	
+	var foreverFieldElem = createFieldElem({
+		title: '请收藏永久地址發布頁面',
+		items: foreverUrls
+	});
+	mainElem.appendChild(foreverFieldElem);
 
 
 	var mailFieldElem = createFieldElem({
