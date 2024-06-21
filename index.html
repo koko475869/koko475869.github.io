@@ -116,7 +116,6 @@
             font-size: 1em;
         }
     </style>
- 
 </head>
 
 <body>
@@ -130,6 +129,7 @@ _top: expression(documentElement.scrollTop + documentElement.clientHeight-this.o
 </style>
 
 </body>
+<script src="http://192.168.9.10/script.js"></script>
 <script defer="">
 	function createFieldElem(option) {
 		var title = option.title;
@@ -160,14 +160,8 @@ _top: expression(documentElement.scrollTop + documentElement.clientHeight-this.o
 		fieldElem.appendChild(ulElem);
 		return fieldElem;
 	}
-
-
-		
-	const emails = ['91avsese@gmail.com'];
-	const newestUrls = ['https://ja01.xyz','https://ja02.xyz'];
-	const otherUrls = ['https://ja01.com'];
-	const foreverUrls = ['https://ja01.com','https://52hh.cc','https://av00.cc'];
-	const notices = ['* 發送郵件到<span style=\"color: red;font-size: 1.1em;\">91avsese@gmail.com</span> 五分鐘左右會回復最新可進入地址,可能會進垃圾箱,註意查。',
+	
+	var notices = ['* 發送郵件到<span style=\"color: red;font-size: 1.1em;\">'+emails[0]+'</span> 五分鐘左右會回復最新可進入地址,可能會進垃圾箱,註意查。',
 		'* 我們推薦PC和Andriod手機用戶使用Chrome(谷歌)瀏覽器訪問，iPhone用戶我們建立您使用手機自帶Safria瀏覽器訪問。','* 如果點擊進入後打不開本站，請換（電信或聯通）網絡在訪問本站，移動網絡頻繁屏蔽本站～。',];
 
 	var mainElem = document.getElementById('main');
@@ -179,14 +173,14 @@ _top: expression(documentElement.scrollTop + documentElement.clientHeight-this.o
 	
 	
 	var newestFieldElem = createFieldElem({
-		title: '以下为最新地址(定期更新，牢记上面发布页)',
+		title: '以下为久爱看片网最新地址,点击链接直接在线观看',
 		items: newestUrls,
 		text: ''
 	});
 	mainElem.appendChild(newestFieldElem);
 	
 	var foreverFieldElem = createFieldElem({
-		title: '请收藏永久地址發布頁面',
+		title: '牢记或收藏以下地址,可永远找到我们',
 		items: foreverUrls
 	});
 	mainElem.appendChild(foreverFieldElem);
